@@ -2,13 +2,16 @@ import React from "react";
 import "./CharacterCard.css";
 
 
-const CharacterCard = () => {
+const CharacterCard = (props) => {
+    return (
+  
     <div className="card">
         <div className="img-container">
-            <img alt="pic" src="https://via.placeholder.com/150x150/"/>
+            <img className="image" alt={props.name} alt="pic" src={props.image}/>
         </div>
-    </div>
+    </div>   
 
+    )
 }
 
 export default CharacterCard;
