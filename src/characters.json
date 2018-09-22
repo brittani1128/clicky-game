@@ -2,61 +2,61 @@
     {
         "id":1,
         "name":"Name1",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/ffb798"
     },
     {
         "id":2,
         "name":"Name2",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/58559c"
     },
     {
         "id":3,
         "name":"Name3",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/00c9af"
     },
     {
         "id":4,
         "name":"Name4",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/a8224a"
     },
     {
         "id":5,
         "name":"Name5",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/c4c5ff"
     },
     {
         "id":6,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/a7f0ff"
     },
     {
         "id":7,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/042337"
     },
     {
         "id":8,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/ded2cf"
     },
     {
         "id":9,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/ffb653"
     },
     {
         "id":10,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/ff3860"
     },
     {
         "id":11,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/187e03"
     },
     {
         "id":12,
         "name":"Name6",
-        "image":"https://via.placeholder.com/150x150/"
+        "image":"https://via.placeholder.com/150x150/ffe69a"
     }
 ]
