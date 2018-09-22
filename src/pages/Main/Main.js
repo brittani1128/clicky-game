@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import NavBar from "../../components/NavBar/NavBar";
+// import NavBar from "../../components/NavBar/NavBar";
 import Game from "../../components/Game/Game";
 import Header from "../../components/Header/Header";
 
@@ -17,7 +17,6 @@ class Main extends Component {
       return (
         <div>
 
-          <NavBar /> 
           <Header /> 
           
           <Game />  
