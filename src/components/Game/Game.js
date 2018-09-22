@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 // import "./CharacterPage.css";
 import CharacterCard from "../CharacterCard/CharacterCard";
-import characters from "../..//characters.json"
+import characters from "../../characters.json"
 
 const styles = {
     container: {
