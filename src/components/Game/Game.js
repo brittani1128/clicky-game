@@ -12,12 +12,15 @@ const styles = {
 
 let clickedArr = [];
 let score = 0;
+let topScore = 0;
 
 class Game extends Component {
     state = {
         characters: characters,
         clicked: clickedArr,
-        score: score
+        score: score,
+        topScore:topScore,
+        message: "Don't click the same image twice!"
     }
 
     // Shuffle characters array
@@ -40,17 +43,18 @@ class Game extends Component {
     handleClick = id => {
         if (clickedArr.includes(id)){
             console.log("Already clicked! Game Over!");
+            topScore = score;
             score = 0;
             clickedArr = [];
             this.setState({
-                
+                topScore: topScore,
                 score:score
             })
         } else {
             clickedArr = [...clickedArr,id]
             score ++;
             this.setState({ 
-               
+               score:score
             })
             
         }
@@ -63,7 +67,7 @@ class Game extends Component {
     render(){
         return( 
         <div className="container" style={styles.container}>
-            <Header />
+            <Header message={this.state.message} score={this.state.score} topScore={this.state.topScore}/>
             {this.state.characters.map(character => (
                 <CharacterCard 
                     id={character.id}
