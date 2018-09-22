@@ -41,27 +41,45 @@ class Game extends Component {
     
     // Handle click event
     handleClick = id => {
+        // Already guessed
         if (clickedArr.includes(id)){
-            console.log("Already clicked! Game Over!");
-            topScore = score;
+            if (topScore < score){
+                topScore = score;
+            }
+            
             score = 0;
             clickedArr = [];
             this.setState({
                 topScore: topScore,
-                score:score
-            })
-        } else {
+                score:score,
+                message:"You already clicked that one! Game Over!"
+            });
+        // Guessed all characters
+        } 
+        // Guessed correctly
+        else {
             clickedArr = [...clickedArr,id]
             score ++;
             this.setState({ 
-               score:score
+               score:score,
+               message:"Nice!"
             })
-            
-        }
+          if (clickedArr.length === characters.length){
+                topScore = score;
+                score= 0;
+                this.setState({
+                    topScore:topScore,
+                    score:score,
+                    message:"You Won!! Click to play again."
+                });
+                clickedArr = [];
+          }
+        
         console.log(clickedArr, score)
         this.shuffle(characters)
     
     }
+}
 
     // Render character card images
     render(){
@@ -75,9 +93,7 @@ class Game extends Component {
                     name={character.name}
                     image={character.image}
                     handleClick={this.handleClick}
-                
-
-                    />
+                />
             ))}
             
         </div>
