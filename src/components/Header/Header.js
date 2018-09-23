@@ -1,11 +1,15 @@
 
 import React from "react";
+import "./Header.css";
+
 
 const styles = {
     heading: {
-        height:300,
+        height:250,
         textAlign:"center",
-        paddingTop:70
+        paddingTop:70,
+        background:"black",
+        marginBottom:40
     },
     scores: {
         fontSize:30
@@ -14,10 +18,10 @@ const styles = {
 
 const Header = (props) => (
     <div className="heading" style={styles.heading}>
-        <h1>CLICKY GAME</h1>
+        <h1>90's Cartoon Shuffle!</h1>
         <h3>{props.message}</h3>
         <div className="scores">
-        <span className="scores">Score: {props.score} |</span><span className="scores"> Top Score: {props.topScore}</span>
+        <span>Score: {props.score} |</span><span> Top Score: {props.topScore}</span>
         </div>
     </div>
 )

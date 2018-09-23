@@ -1,6 +1,8 @@
 import React, {Component} from "react";
-// import Header from "../../components/Header/Header";
 import Game from "../../components/Game/Game";
+
+
+
 
 
 class Main extends Component {
@@ -10,7 +12,6 @@ class Main extends Component {
       return (
         <div>
 
-          {/* <Header />  */}
           <Game /> 
 
         </div>

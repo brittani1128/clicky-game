@@ -1,0 +1,19 @@
+h1 {
+    color:white;
+    /* text-transform:uppercase; */
+    font-family: 'Chewy', cursive;
+    letter-spacing: 4px;
+    font-size: 60px;
+
+}
+
+h3 {
+    color:white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.scores {
+    color:white;
+    font-size:25px;
+    font-family: 'PT Sans', sans-serif;
+}

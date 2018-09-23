@@ -84,8 +84,10 @@ class Game extends Component {
     // Render character card images
     render(){
         return( 
-        <div className="container" style={styles.container}>
-            <Header message={this.state.message} score={this.state.score} topScore={this.state.topScore}/>
+        <div>
+          <Header message={this.state.message} score={this.state.score} topScore={this.state.topScore}/>
+          <div className="container" style={styles.container}>
+            
             {this.state.characters.map(character => (
                 <CharacterCard 
                     id={character.id}
@@ -96,6 +98,7 @@ class Game extends Component {
                 />
             ))}
             
+          </div>
         </div>
      );
     }
