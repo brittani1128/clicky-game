@@ -1,13 +1,13 @@
 .card {
     background: #fff;
     border-radius: 2px;
-    border: 1px solid #fff;
+    border: 2px solid black;
     padding:2px;
     /* height: 200px; */
     margin: 1rem;
     position: relative;
     width: 156px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
     text-align: left;
     float:left;
     transition: box-shadow .3s;
@@ -15,5 +15,6 @@
   }
 
   .card:hover {
-    box-shadow: 0 10px 20px #999, 0 4px 20px #999; 
+    box-shadow: 0 0px 15px #fff, 0 0px 10px #fff; 
+
   }
